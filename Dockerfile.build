@@ -1,0 +1,12 @@
+FROM mitchty/alpine-ghc:7.10
+
+MAINTAINER Rachid Zarouali <xinity77@gmail.com>
+
+RUN apk --no-cache add gmp musl-dev git
+
+COPY bin/make_bin.sh /usr/local/bin
+
+ENTRYPOINT ["/usr/local/bin/make_bin.sh"]
+
+CMD ["/root/.local/bin"]
+
