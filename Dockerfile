@@ -8,4 +8,3 @@ COPY bin/hadolint /usr/local/bin
 
 ENTRYPOINT [ "/usr/local/bin/hadolint", "-" ]
 
-
